@@ -1,0 +1,18 @@
+h2{
+    font-size:x-large;
+    position: relative;
+    margin-left: 300px;
+    text-shadow: 1px 2px gold;
+}
+
+.navbar-brand{
+    font-size:x-large;
+
+}
+.navbar{
+    background-color: lightgray;
+}
+a:hover{
+    color:red;
+    font-size: 18px;
+}

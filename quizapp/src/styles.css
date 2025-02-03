@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+body{
+    background-color:skyblue;
+    background-image: url('../public/images/bi3.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+
+}
