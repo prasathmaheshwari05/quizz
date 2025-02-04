@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AuthService } from '../../_service/auth.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,5 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
+  constructor(public auth:AuthService){
+    
+  }
 }
