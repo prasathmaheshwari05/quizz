@@ -1,14 +1,25 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
-  imports: [],
+  imports: [RouterLink,FormsModule,CommonModule],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css'
 })
-export class SignupComponent {
+export class SignupComponent implements OnInit {
+  formdata={name:"",email:"",password:"",confirmpassword:""};
+  submit=false
   constructor(private router: Router) {}
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  onSubmit(){
+    console.log(this.formdata);
+
+  }
 
   // Dummy signup function
   signUp() {
@@ -19,3 +30,4 @@ export class SignupComponent {
     this.router.navigate(['/login']);
   }
 }
+

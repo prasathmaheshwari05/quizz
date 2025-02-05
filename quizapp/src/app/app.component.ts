@@ -3,6 +3,9 @@ import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './nav/nav/nav.component';
 import { FooterComponent } from './footer/footer/footer.component';
 
+
+
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,NavComponent,FooterComponent],
@@ -12,3 +15,4 @@ import { FooterComponent } from './footer/footer/footer.component';
 export class AppComponent {
   title = 'quizapp';
 }
+

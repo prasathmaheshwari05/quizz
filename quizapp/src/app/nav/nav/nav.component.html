@@ -1,28 +1,29 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand text-danger" href="login"> 📝 Quiz App</a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> -->
+        </button>
         <h2>Happy 📖 Learning</h2>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <ng-container *ngIf="this.auth.isAutheticated(); then authenticated; else notAuthenticated"></ng-container>
+                <ng-container *ngIf="true;then authenticated ;else notAuthenticated;"></ng-container>
                 <ng-template #notAuthenticated>
+                   
+                </ng-template>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" routerLink="dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" routerLink="admin-login">Admin-Login</a>
+                </li>
+                
+                <ng-template #authenticated>
                     <li class="nav-item">
                         <a class="nav-link text-dark" routerLink="login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" routerLink="signup" href='/login' >Signup</a>
-                    </li>
-                </ng-template>
-                
-                <ng-template #authenticated>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" routerLink="dashboard">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" routerLink="admin-login">Admin-Login</a>
+                        <a class="nav-link text-dark" routerLink="signup">Signup</a>
                     </li>
                 </ng-template>
             </ul>

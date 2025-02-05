@@ -16,6 +16,6 @@ export class LoginComponent {
     console.log('User logged in!');
 
     // Navigate to the admin login page after login
-    this.router.navigate(['/admin-login']);
+    this.router.navigate(['/dashboard']);
   }
 }
